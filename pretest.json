@@ -1,0 +1,60 @@
+{
+  "version": 2.0,
+  "questions":[
+		{
+		"question":"Electrical Activity of Brain is called:",
+		"answers":{
+		"a":"EMG",
+		"b":"ECG",
+		"c":"EEG",
+		"d":"EOG"
+		},
+		"correctAnswer":"c",
+		"difficulty": "beginner"
+		},
+		{
+		"question":"EEG signal is a:",
+		"answers":{
+		"a":"Strong Signal",
+		"b":"Extra Strong signal",
+		"c":"Weak signal",
+		"d":"Very weak signal"
+		},
+		"correctAnswer":"d",
+		"difficulty": "beginner"
+		},
+		{
+		"question":"Electrolyte gel in EEG recording is used for:",
+		"answers":{
+		"a":"Low Impedance",
+		"b":"Low resistance",
+		"c":"Low capacitance",
+		"d":"Low inductance"
+		},
+		"correctAnswer":"a",
+		"difficulty": "beginner"
+		},
+		{
+		"question":"EEG signal is:",
+		"answers":{
+		"a":"Brain Wave",
+		"b":"Heart Wave",
+		"c":"Muscles Wave",
+		"d":"None of these"
+		},
+		"correctAnswer":"a",
+		"difficulty": "beginner"
+		},
+		{
+		"question":"Artifact in EEG Signal:",
+		"answers":{
+		"a":"EMG",
+		"b":"ECG",
+		"c":"EOG",
+		"d":"All of the above"
+		},
+		"correctAnswer":"d",
+		"difficulty": "beginner"
+		}
+  ]
+}

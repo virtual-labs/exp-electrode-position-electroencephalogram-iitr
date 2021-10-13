@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VIRTUAL_LAB</title>
+	<link rel="stylesheet" href="page.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="demo1.css">
+
+
+<!--link of Seven Segment code  starts-->
+
+    <link href="//fonts.googleapis.com/css?family=Iceberg" rel="stylesheet">
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/ui-darkness/jquery-ui.css" rel="stylesheet">   
+    <link href="prettify.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="knockout-2.2.1.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js"></script>
+    <script src="sevenSeg.js"></script>
+    <script src="demo.js"></script>
+    
+<!--link of seven Segment code ends-->
+ 
+
+</head>
+<body>
+
+	<div class="box" style="position: absolute;">
+
+<!--container1 contains logo html code begins-->	
+
+				<div class="container1" style="position: absolute;">
+		    <img src="Indian_Institute_of_Technology_Roorkee_logo.png" width="95px" height="95px" style="margin-left: 5px; float: left;" ><center><h2 >Virtual Labs IIT Roorkee<br>Biomedical Laboratory<br></h2><h2 style="background-color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Electrode Placement of Electroencephalogram (EEG)</h2></center></div>
+		    <div style="position: relative;margin-top: 100px;"></div><br>			
+<br>
+</div>
+
+<!--container1 contains logo html code ends--> 
+
+<!--container2 begins-->
+
+<div class="container2" style="position:absolute;float: left;">
+
+
+<p style="color:black;font-size: 20px;position: absolute;left:35px;top:10px" ><u>Left Hemisphere</u></p>
+
+
+<p style="color:black;font-size: 20px;position: absolute;left:828px;top:10px" ><u>Right Hemisphere</u></p>
+
+<p style="color:black;font-size: 20px;position: absolute;left:450px;top:450px" ><u>Central</u></p>
+
+
+
+
+  <img src="Assets/10-20-system-highlighted.png" style="height:400px;width:540px;margin-left: 200px;margin-top: 10px;">
+
+
+
+
+
+<div id="imgg" style="display: none;" >
+<p   style="color:blue;font-size:  18px; position: absolute;left:1050px;top:40px" >EEG cap on scalp for electrode placement<br> and leads position: </p>
+<img src="Assets/10-20 channel leads.png" style="height:500px;width:1250px;margin-left: 600px;margin-top:-382px;z-index: 999" >
+
+
+</div>
+ 
+
+ 
+</div>
+
+
+
+
+
+
+
+<!--container2 ends-->
+
+
+<!--INSTRUCTION DROPDOWN HTML STARTS-->
+
+  <div class="dropdownn">
+  <button class="dropbtn">INSTRUCTIONS</button>
+  <div class="dropdownn-content">
+   <b><p>STEP 1 : Make all the Correct Connections.</p></b>
+<table style="width:500px">
+  <tr>
+    <td><b> Left Hemisphere </b></td>
+    <td><b> Central </b></td>
+    <td><b> Right Hemisphere</b></td>
+  </tr>
+  <tr>
+    <td>1.&nbsp;Connect Fp1 to Fp1.</td>
+    <td>1.&nbsp;Connect Fz to Fz.</td>
+    <td>1.&nbsp;Connect Fp2 to Fp2.</td>
+  </tr>
+  <tr>
+    <td>2.&nbsp;Connect F7 to F7.</td>
+    <td>2.&nbsp;Connect Cz to Cz.</td>
+    <td>2.&nbsp;Connect F8 to F8.</td>
+  </tr>
+  <tr>
+    <td>3.&nbsp;Connect F3 to F3.</td>
+    <td>3.&nbsp;Connect Pz to Pz.</td>
+    <td>3.&nbsp;Connect F4 to F4.</td>
+  </tr>
+  <tr>
+    <td>4.&nbsp;Connect T3 to T3.</td>
+    <td></td>
+    <td>4.&nbsp;Connect T4 to T4.</td>
+  </tr>
+  <tr>
+    <td>5.&nbsp;Connect C3 to C3.</td>
+    <td></td>
+    <td>5.&nbsp;Connect C4 to C4.</td>
+  </tr>
+  <tr>
+    <td>6.&nbsp;Connect T5 to T5.</td>
+    <td></td>
+    <td>6.&nbsp;Connect T6 to T6.</td>
+  </tr>
+  <tr>
+    <td>7.&nbsp;Connect P3 to P3.</td>
+    <td></td>
+    <td>7.&nbsp;Connect P4 to P4.</td>
+  </tr>
+  <tr>
+    <td>8.&nbsp;Connect O1 to O1.</td>
+    <td></td>
+    <td>8.&nbsp;Connect O2 to O2.</td>
+  </tr>
+  <tr>
+    <td>9.&nbsp;Connect A1 to A1.</td>
+    <td></td>
+    <td>9.&nbsp;Connect A2 to A2.</td>
+  </tr>
+</table>
+  
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="Assets/right connections.PNG" style="height:250px;width:455px;"><br>
+  <b><p>STEP 2 : Click on check button to check for Correct Connections.</p></b>
+  <b><p>STEP 3 : If Connections are not correct click on reset button for reset connections.</p></b>
+  <b><p>STEP 4 : Click on print button to save the observations.</p></b>
+  </div></div>
+
+
+
+  
+<!--INSTRUCTION DROPDOWN HTML ENDS-->
+
+
+
+
+
+<!--connectors html begins-->
+			 
+       <div class="jtk-demo-main">
+            <div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
+              
+      <div class="littledot" id="ld1"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld1" style="font-size: 14px;">Fp1</a></div>
+      <div class="littledot" id="ld2"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld2" style="font-size: 14px;">F3</a></div>
+      <div class="littledot" id="ld3"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld3" style="font-size: 14px;">F7</a></div>
+      <div class="littledot" id="ld4"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld4" style="font-size: 14px;">T3</a></div>
+      <div class="littledot" id="ld5"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld5" style="font-size: 14px;">C3</a></div>
+      <div class="littledot" id="ld6"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld6" style="font-size: 14px;">T5</a></div>
+      <div class="littledot" id="ld7"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld7" style="font-size: 14px;">P3</a></div>
+      <div class="littledot" id="ld8"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld8" style="font-size: 14px;">O1</a></div>
+      <div class="littledot" id="ld88"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld88" style="font-size: 14px;">A1</a></div>
+
+
+      <div class="littledot" id="ld31"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld31" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld32"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld32" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld33"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld33" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld34"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld34" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld35"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld35" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld36"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld36" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld37"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld37" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld38"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld38" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld388"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld388" style="font-size: 14px;"></a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="littledot" id="ld9"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld9" style="font-size: 14px;">Fz</a></div>
+    <div class="littledot" id="ld10"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld10" style="font-size: 14px;">Cz</a></div>
+    <div class="littledot" id="ld19"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld19" style="font-size: 14px;">Pz</a></div>
+
+
+
+    <div class="littledot" id="ld91"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld91" style="font-size: 14px;"></a></div>
+    <div class="littledot" id="ld101"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld101" style="font-size: 14px;"></a></div>
+    <div class="littledot" id="ld191"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld191" style="font-size: 14px;"></a></div>
+
+
+
+
+
+
+
+      <div class="littledot" id="ld11"><br ><a href="#" class="cmdLink detach" rel="ld11" style="font-size: 14px;">F8</a></div>
+      <div class="littledot" id="ld12"><br ><a href="#" class="cmdLink detach" rel="ld12" style="font-size: 14px;">Fp2</a></div>
+      <div class="littledot" id="ld13"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld13" style="font-size: 14px;">F4</a></div>
+      <div class="littledot" id="ld14"><br ><a href="#" class="cmdLink detach" rel="ld14" style="font-size: 14px;">T4</a></div>
+      <div class="littledot" id="ld15"><br ><a href="#" class="cmdLink detach" rel="ld15" style="font-size: 14px;">C4</a></div>
+      <div class="littledot" id="ld16"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld16" style="font-size: 14px;">T6</a></div>
+      <div class="littledot" id="ld17"><br ><a href="#" class="cmdLink detach" rel="ld17" style="font-size: 17px;">P4</a></div>
+      <div class="littledot" id="ld18"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld18" style="font-size: 14px;">O2</a></div>
+      <div class="littledot" id="ld818"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld818" style="font-size: 14px;">A2</a></div>
+            
+
+      <div class="littledot" id="ld111"><br ><a href="#" class="cmdLink detach" rel="ld111" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld121"><br ><a href="#" class="cmdLink detach" rel="ld121" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld131"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld131" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld141"><br ><a href="#" class="cmdLink detach" rel="ld141" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld151"><br ><a href="#" class="cmdLink detach" rel="ld151" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld161"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld161" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld171"><br ><a href="#" class="cmdLink detach" rel="ld171" style="font-size: 17px;"></a></div>
+      <div class="littledot" id="ld181"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld181" style="font-size: 14px;"></a></div>
+      <div class="littledot" id="ld1818"><br style=" margin-bottom: 0.8em;display: block;"><a href="#" class="cmdLink detach" rel="ld1818" style="font-size: 14px;"></a></div>
+
+
+
+
+
+            
+            
+                
+<br><br>
+
+
+
+            </div><br><br><br><br><br><br></div>
+        
+
+        <div class="button" id="check-button" style="position:absolute; left: 4em; top: 693px;width: 34px;height: 14px;">CHECK</div>
+        <div class="button"  id="button" style="position:absolute; left: 12em; top: 693px;width: 34px;height: 14px;" onclick="window.location.href = 'EEG.html';">RESET</div>
+       
+        <input style="position:absolute; left: 20em; top: 693px; width: 104px;height: 44px; " type = "button" value = " PRINT  " class="button " onclick="window.print()">
+        
+        <!-- JS -->
+        <script src="jsplumb1.js"></script>
+        <script src="demo1.js"></script>
+        <!-- /JS -->
+
+      
+
+<div class="copyright" style="position:absolute;"><center>&#169Copyright 2021 Virtual Labs, IIT Roorkee</center></div>
+
+</body>
+
+
+<!--script of stopwatch begins-->
+
+<script>
+
+const timer = document.getElementById('stopwatch');
+var hr = 0;
+var min = 0;
+var sec = 0;
+var stoptime = true;
+function startTimer() {
+  if (stoptime == true) {
+        stoptime = false;
+        timerCycle();
+    }
+}
+function stopTimer() {
+  if (stoptime == false) {
+    stoptime = true;
+  }
+}
+function timerCycle() {
+    if (stoptime == false) {
+    sec = parseInt(sec);
+    min = parseInt(min);
+    hr = parseInt(hr);
+
+    sec = sec + 1;
+
+    if (sec == 60) {
+      min = min + 1;
+      sec = 0;
+    }
+    if (min == 60) {
+      hr = hr + 1;
+      min = 0;
+      sec = 0;
+    }
+    if (sec < 10 || sec == 0) {
+      sec = '0' + sec;
+    }
+    if (min < 10 || min == 0) {
+      min = '0' + min;
+    }
+    if (hr < 10 || hr == 0) {
+      hr = '0' + hr;
+    }
+    timer.innerHTML = hr + ':' + min + ':' + sec;
+    setTimeout("timerCycle()", 1000);
+  }
+}
+function resetTimer() {
+    timer.innerHTML = '00:00:00';
+}
+function resetTimer() {
+    timer.innerHTML = "00:00:00";
+    stoptime = true;
+    hr = 0;
+    sec = 0;
+    min = 0;
+}
+
+</script>
+
+<!--script of stopwatch ends-->
+
+
+<!--Scrypting of seven segment code starts-->
+
+<script>
+
+ (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-44023738-2', 'brandonlwhite.github.io');
+        ga('send', 'pageview');
+       
+</script>
+
+<!--Scrypting of seven segment code ends-->
+ 
+
+</html> 
