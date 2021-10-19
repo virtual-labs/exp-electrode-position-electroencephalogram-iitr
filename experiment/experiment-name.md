@@ -1,1 +1,1 @@
-## Experiment name
+## Study of various leads and electrode position for monitoring of electroencephalogram (EEG).
