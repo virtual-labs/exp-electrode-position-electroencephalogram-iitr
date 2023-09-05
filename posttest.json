@@ -1,0 +1,58 @@
+{
+  "version": 2.0,
+  "questions": [
+	{
+	"question":"10-20 international electrode placement system is for:",
+	"answers":{
+	"a":"EMG Recording",
+	"b":"ECG Recording",
+	"c":"EEG Recording",
+	"d":"EGG Recording"
+	},
+	"correctAnswer":"c",
+	"difficulty": "intermediate"
+	},
+	{
+	"question":"The word 10-20 in 10-20 international electrode placement system used for:",
+	"answers":{
+	"a":"Distance between electrodes",
+	"b":"For using 10 or 20 electrodes",
+	"c":"Both",
+	"d":"None of these"
+	},
+	"correctAnswer":"a"
+	},
+	{
+	"question":"How many channels a commercial EEG machine can have:",
+	"answers":{
+	"a":"32",
+	"b":"8",
+	"c":"16",
+	"d":"4"
+	},
+	"correctAnswer":"a",
+	"difficulty": "intermediate"
+	},
+	{
+	"question":"What’s the distance pattern in 10-20 international electrode placement system?",
+	"answers":{
+	"a":"10,20,20,20,20,10",
+	"b":"10,20,10,20,10,20,10",
+	"c":"10,10,20,20,10,10",
+	"d":"20,10,10,20,10,10,20"
+	},
+	"correctAnswer":"a",
+	"difficulty": "intermediate"
+	},
+	{
+	"question":"EEG electrodes are ————— in size than ECG electrodes:",
+	"answers":{
+	"a":"Smaller",
+	"b":"Larger",
+	"c":"Equal",
+	"d":"Twice"
+	},
+	"correctAnswer":"a"
+	}
+  ]
+}
